@@ -1,0 +1,36 @@
+device     fs_type label    mount point    UUID
+
+/dev/mapper/vgubuntu-swap_1
+           swap             [SWAP]         f4803e33-e23b-40e0-9ac7-82b827ede3a5
+/dev/mapper/vgubuntu-root
+           ext4             /              91d0dda9-9cef-4d68-910d-cb6340fd4f3f
+/dev/loop0 squashfs         /snap/code/71  
+/dev/loop1 squashfs         /snap/core/11316 
+/dev/loop2 squashfs         /snap/code/70  
+/dev/loop4 squashfs         /snap/core18/2074 
+/dev/loop5 squashfs         /snap/core/11420 
+/dev/loop6 squashfs         /snap/gnome-3-34-1804/66 
+/dev/loop7 squashfs         /snap/snap-store/542 
+/dev/nvme0n1
+           ext4    Chia_TmpF_3 (not mounted) 27b1967c-d899-4b90-b6d2-fb2d77d23726
+/dev/sdb1  ext4    Chia_Sto_3 /media/michael/Chia_Sto_3 5f5170ca-d4aa-4989-8513-0874df7a2079
+/dev/sdc1  vfat             /boot/efi      380D-1EB5
+/dev/sdc2  LVM2_member      (in use)       yEWaIp-Pugf-Rw8K-FR8c-j2pd-uICN-NK2TnV
+/dev/sda1  ext4    Chia_Sto_1 /media/michael/Chia_Sto_1 35820c64-2c95-43c4-a889-3ac5350a5fee
+/dev/sdf1  ext4    Chia Plots /media/michael/Chia Plots 56d9c74a-6f55-42ba-b4cd-b61100336627
+/dev/sde1  ext4    Chia_Sto_2 /media/michael/Chia_Sto_2 c95402df-4a45-434f-9c90-cec045fab363
+/dev/loop8 squashfs         /snap/gtk-common-themes/1514 
+/dev/loop9 squashfs         /snap/spotify/46 
+/dev/loop10
+           squashfs         /snap/snapd/12398 
+/dev/loop11
+           squashfs         /snap/snapd/12704 
+/dev/loop12
+           squashfs         /snap/gtk-common-themes/1515 
+/dev/loop13
+           squashfs         /snap/gnome-3-34-1804/72 
+/dev/loop14
+           squashfs         /snap/snap-store/547 
+/dev/loop15
+           squashfs         /snap/core18/2128 
+/dev/sdd1                   (not mounted)  
