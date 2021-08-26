@@ -9,8 +9,7 @@ class Manager:
         self.driveNames = [
             'Chia_Sto_1',
             'Chia_Sto_2',
-            'Chia_Sto_3',
-            'Chia_TmpF_3'
+            'Chia_Sto_3'
         ]
 
         self.driveList = self.discoverDrives()
@@ -31,7 +30,7 @@ class Manager:
 
             index = output.find(driveName)
             if index == -1:
-                raise Exception(f'{driveName} not found.')
+                print(f'{driveName} not found.')
 
             unmountedIndex = output.find('(not mounted)')
             if not unmountedIndex == -1:
