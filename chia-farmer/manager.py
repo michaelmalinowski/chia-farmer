@@ -40,7 +40,18 @@ class Manager:
                     if char == ' ' or char == '\\':
                         break
                     drivePath += char
-                print(drivePath)
+                
+                mountPoint = '/media/' +  f"Chia_{driveName[-1]}"
+                mountDrive(drivePath, mountDrive)
+
+    def mountDrive(self, drivePath, mountPoint):
+        bashCommand = f"sudo mount {drivePath} {mountDrive}"
+        process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+        output, error = process.communicate()
+        if not error == None:
+            raise Exception(f'Subprocess error: {error}') 
+
+        print(f"{drivePath} mounted at {mountPoint}")
 
 
     def watchDrives(self):
