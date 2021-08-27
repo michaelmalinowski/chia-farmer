@@ -62,5 +62,3 @@ class Manager:
 
     def restartSequence(self, drive: str):
         pass
-
-m = Manager()
