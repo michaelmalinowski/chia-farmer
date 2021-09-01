@@ -4,4 +4,4 @@ cd /home/ubuntu/chia-blockchain
 
 . ./activate
 
-chia start farmer
+sudo -u ubuntu chia start farmer
