@@ -35,7 +35,6 @@ class Manager:
                 raise Exception(f'Subprocess error: {error}') 
 
             output = str(output)[53:]
-            print(output)
 
             index = output.find(driveName)
             if index == -1:
