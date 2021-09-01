@@ -16,6 +16,15 @@ class Manager:
 
         self.watchDrives()
 
+    def mountDrive(self, drivePath, mountPoint):
+        bashCommand = f"sudo mount {drivePath} {mountPoint}"
+        process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+        output, error = process.communicate()
+        if not error == None:
+            raise Exception(f'Subprocess error: {error}') 
+
+        print(f"{drivePath} mounted at {mountPoint}")
+
     def discoverDrives(self):
         for driveName in self.driveNames:
 
@@ -43,16 +52,6 @@ class Manager:
                 
                 mountPoint = '/media/' +  f"Chia_{driveName[-1]}"
                 mountDrive(drivePath, mountPoint)
-
-    def mountDrive(self, drivePath, mountPoint):
-        bashCommand = f"sudo mount {drivePath} {mountDrive}"
-        process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
-        output, error = process.communicate()
-        if not error == None:
-            raise Exception(f'Subprocess error: {error}') 
-
-        print(f"{drivePath} mounted at {mountPoint}")
-
 
     def watchDrives(self):
         pass
