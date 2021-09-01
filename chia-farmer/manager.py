@@ -51,7 +51,7 @@ class Manager:
                     drivePath += char
                 
                 mountPoint = '/media/' +  f"Chia_{driveName[-1]}"
-                mountDrive(drivePath, mountPoint)
+                self.mountDrive(drivePath, mountPoint)
 
     def watchDrives(self):
         pass
