@@ -42,7 +42,7 @@ class Manager:
                     drivePath += char
                 
                 mountPoint = '/media/' +  f"Chia_{driveName[-1]}"
-                mountDrive(drivePath, mountDrive)
+                mountDrive(drivePath, mountPoint)
 
     def mountDrive(self, drivePath, mountPoint):
         bashCommand = f"sudo mount {drivePath} {mountDrive}"
